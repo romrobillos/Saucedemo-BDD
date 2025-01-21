@@ -28,18 +28,12 @@ And Click Login
 Then Page Title should be on Product Page
 And Close the browser 
 Examples:
-<<<<<<< HEAD
-| username | password |
-| standard_user | secret_sauce |
-<<<<<<< HEAD
-=======
-| problem_user | secret_sauce |
-=======
-|username       |password    |
-|standard_user  |secret_sauce|
-|problem_user   |secret_sauce|
-|error_user     |secret_sauce|
-|locked_out_user|secret_sauce|
+|username                  |password    |
+|standard_user           	 |secret_sauce|
+|problem_user  						 |secret_sauce|
+|error_user   					   |secret_sauce|
+|visual_user  					   |secret_sauce|
+|performance_glitch_user   |secret_sauce|
 
 @ResponseTime
 Scenario Outline: Verify Login Response Time
@@ -62,7 +56,7 @@ Examples:
 |locked_out_user  |secret_sauce|
 
 @InvalidUserErrorMessage
-Scenario Outline: Verify Locked out user error message
+Scenario Outline: Verify invalid user error message
 When User enter username as "<username>" and password as "<password>"
 And Click Login
 Then Verify invalid user message
@@ -70,8 +64,6 @@ And Close the browser
 Examples:
 |username |password|
 |jon      |jon12345|
->>>>>>> de715f0 (Added Login Scenarios)
->>>>>>> 2f49203 (Added Login Scenarios)
 
 
 

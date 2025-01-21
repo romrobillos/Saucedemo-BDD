@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="2" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-22T04:22:24 GMT+08:00" name="Surefire suite" finished-at="2025-01-22T04:22:40 GMT+08:00" duration-ms="16021">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-01-22T04:22:24 GMT+08:00" name="Surefire test" finished-at="2025-01-22T04:22:40 GMT+08:00" duration-ms="16021">
+      <class name="testRunner.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:24 GMT+08:00" name="setUpClass" finished-at="2025-01-22T04:22:24 GMT+08:00" duration-ms="488" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@70f68288]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:24 GMT+08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-22T04:22:27 GMT+08:00" duration-ms="2989" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Items on Cart badge"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:27 GMT+08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-22T04:22:32 GMT+08:00" duration-ms="5227" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Items on Cart badge"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[null Skipping test: Jacket/Tshirt and Redshirt not found in the cart due to defect ProductPage Add/Remove Btns.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: null Skipping test: Jacket/Tshirt and Redshirt not found in the cart due to defect ProductPage Add/Remove Btns.
+at StepDefinitions.ProductSteps.verify_cart_badge(ProductSteps.java:185)
+at ✽.Verify Cart badge(file:///C:/Users/admin/eclipse-workspace/BDD/BDD-Saucedemo/Features/Product.feature:51)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:32 GMT+08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-22T04:22:37 GMT+08:00" duration-ms="5030" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Items on Cart badge"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[null Skipping test: Jacket/Tshirt and Redshirt not found in the cart due to defect ProductPage Add/Remove Btns.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: null Skipping test: Jacket/Tshirt and Redshirt not found in the cart due to defect ProductPage Add/Remove Btns.
+at StepDefinitions.ProductSteps.verify_cart_badge(ProductSteps.java:185)
+at ✽.Verify Cart badge(file:///C:/Users/admin/eclipse-workspace/BDD/BDD-Saucedemo/Features/Product.feature:51)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:37 GMT+08:00" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-01-22T04:22:40 GMT+08:00" duration-ms="2211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify All Items on Cart badge"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Product"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.CucumberTestRunner@243c4f91]" started-at="2025-01-22T04:22:40 GMT+08:00" name="tearDownClass" finished-at="2025-01-22T04:22:40 GMT+08:00" duration-ms="33" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunner.CucumberTestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

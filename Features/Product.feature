@@ -116,7 +116,6 @@ Examples:
 |username       |password    |
 |problem_user   |secret_sauce|
 |error_user     |secret_sauce|
-|visual_user  	|secret_sauce|
 
 @VerifyGlitchZtoASort
 Scenario Outline: Verify Glitch Z to A Sort
@@ -160,8 +159,8 @@ Then Verify Logout
 And Close the browser 
 Examples:
 |username                  |password    |
-|performance_glitch_user   |secret_sauce|
 |standard_user           	 |secret_sauce|
 |problem_user  						 |secret_sauce|
 |error_user   					   |secret_sauce|
 |visual_user  					   |secret_sauce|
+|performance_glitch_user   |secret_sauce|

@@ -16,18 +16,18 @@
 #""
 ## (Comments)
 #Sample Feature Definition Template
-Feature: Login
+Feature: Cart
 Background: 	
 Given User launch browser
 When User open url saucedemo
 
 @VerifyAllItemsIfDisplayedOnCart
-Scenario Outline: Verify Login with Valid Credentials
+Scenario Outline: Verify All Items if displayed on Cart
 When User enter username as "<username>" and password as "<password>"
 And Click Login
 Then Page Title should be on Product Page
-And Add Items to Cart
-And Verify All Items if displayed on Cart
+When Add Items to Cart
+Then Verify All Items if displayed on Cart
 And Close the browser 
 Examples:
 |username                  |password    |
@@ -38,12 +38,12 @@ Examples:
 |performance_glitch_user   |secret_sauce|
 
 @VerifyRemoveButton
-Scenario Outline: Verify Login with Valid Credentials
+Scenario Outline: Verify cart page remove button
 When User enter username as "<username>" and password as "<password>"
 And Click Login
 Then Page Title should be on Product Page
-And Add Items to Cart
-And Verify cart page remove button
+When Add Items to Cart
+Then Verify cart page remove button
 And Close the browser 
 Examples:
 |username                  |password    |
@@ -52,24 +52,24 @@ Examples:
 |error_user   					   |secret_sauce|
 
 @VerifyCheckoutBtnCoordinates
-Scenario Outline: Verify Login with Valid Credentials
+Scenario Outline: Verify CheckoutBtn coordinates
 When User enter username as "<username>" and password as "<password>"
 And Click Login
 Then Page Title should be on Product Page
-And Add Items to Cart
-And Verify CheckoutBtn coordinates
+When Add Items to Cart
+Then Verify CheckoutBtn coordinates
 And Close the browser 
 Examples:
 |username                  |password    |
 |visual_user  					   |secret_sauce|
 
 @VerifyIfAllItemsCanCheckout
-Scenario Outline: Verify Login with Valid Credentials
+Scenario Outline: Verify If All Items Can Checkout
 When User enter username as "<username>" and password as "<password>"
 And Click Login
 Then Page Title should be on Product Page
-And Add Items to Cart
-And Verify If All Items Can Checkout
+When Add Items to Cart
+Then Verify If All Items Can Checkout
 And Close the browser 
 Examples:
 |username                  |password    |

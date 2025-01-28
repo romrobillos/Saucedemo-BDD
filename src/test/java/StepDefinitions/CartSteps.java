@@ -12,13 +12,14 @@ import org.testng.SkipException;
 import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjects.CartPage;
 import pageObjects.CheckoutPage;
 import pageObjects.ProductPage;
 
 public class CartSteps extends BaseSteps {
 
-	@Then("Add Items to Cart")
+	@When("Add Items to Cart")
 	public void add_items_to_cart() {
 		ProductPage productPage = new ProductPage(driver);
 		List<WebElement> itemsToAdd = List.of(productPage.getAddBackpackBtn(), productPage.getAddBikelightBtn(),
@@ -42,6 +43,7 @@ public class CartSteps extends BaseSteps {
 
 		productPage.toCart();
 	}
+	
 
 	@Then("Verify All Items if displayed on Cart")
 	public void verify_all_items_if_displayed_on_cart() {

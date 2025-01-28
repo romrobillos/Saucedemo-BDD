@@ -17,6 +17,7 @@ import org.testng.SkipException;
 import org.testng.asserts.SoftAssert;
 
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import pageObjects.LoginPage;
 import pageObjects.ProductPage;
 
@@ -363,6 +364,13 @@ public class ProductSteps extends BaseSteps {
 
 		this.duration = (endTime - startTime) / 1_000_000_000.0;
 		Assert.assertTrue(this.duration <= 1.0, "\nSort took " + this.duration + " seconds expecting <=1.0 seconds");
+	}
+	
+	@When("Add Backpack to Cart")
+	public void add_backpack_to_cart() {
+		ProductPage productPage = new ProductPage(driver);
+		productPage.getAddBackpackBtn().click();
+		productPage.toCart();
 	}
 
 	// Verify Logout
